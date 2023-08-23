@@ -11,12 +11,12 @@ namespace MealsRestaurant.Models
         public decimal? MealPriceDiscount { get; set; }
 
         
-        public int CategoriyId { get; set; }
-        [ForeignKey("CategoriyId")]
-        public Categoriy Categoriy { get; set; }
+        public int CategoryId { get; set; }
+
+
+        public Category Category { get; set; }
         public virtual ICollection<OrderItem> Orders { get; set; }
         public virtual ICollection<MealSubscription> Subscriptions { get; set; }
-
         public virtual ICollection<Ad> Ads { get; set; }
     }
 }

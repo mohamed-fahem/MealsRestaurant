@@ -12,9 +12,12 @@ namespace MealsRestaurant.Models
         public int Late { get; set; }
 
         
-        public string ApplicationUserId { get; set; }
-        [ForeignKey("ApplicationUserId")]
+        public string UserId { get; set; }
+
+
+        [ForeignKey("UserId")]
         public ApplicationUser ApplicationUser { get; set; }
+
 
     }
 }

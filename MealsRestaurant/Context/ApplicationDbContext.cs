@@ -11,9 +11,10 @@ namespace MealsRestaurant.Context
         }
 
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
+
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
-        public DbSet<Categoriy> Categories { get; set; }
+        public DbSet<Category> Categories { get; set; }
         public DbSet<Meal> Meals { get; set; }
         public DbSet<Subscription> Subscriptions { get; set; }
         public DbSet<Ad> Ads { get; set; }

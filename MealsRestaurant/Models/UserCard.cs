@@ -10,9 +10,10 @@ namespace MealsRestaurant.Models
         public DateTime EndDate { get; set; }
 
         
-        public string ApplicationUserId { get; set; }
+        public string UserId { get; set; }
         
-        [ForeignKey("ApplicationUserId")]
+
+        [ForeignKey("UserId")]
         public ApplicationUser ApplicationUser { get; set; }
     }
 }
